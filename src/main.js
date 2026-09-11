@@ -86,7 +86,7 @@ async function handleLoadMore() {
     const data = await getImagesByQuery(query, page);
     createGallery(data.hits);
 
-    // Плавне прокручування сторінки
+
     const galleryItem = document.querySelector('.gallery-item');
     if (galleryItem) {
       const cardHeight = galleryItem.getBoundingClientRect().height;
